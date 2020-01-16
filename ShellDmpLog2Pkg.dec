@@ -1,0 +1,11 @@
+## @file
+#
+#   Create by HPBird
+#
+##
+
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = TCG2ShellDmpLog2
+  PACKAGE_GUID                   = 9EACEBEF-92C5-4b88-A738-5E7CBE0791D4
+  PACKAGE_VERSION                = 0.4

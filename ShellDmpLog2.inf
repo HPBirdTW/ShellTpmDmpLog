@@ -1,0 +1,61 @@
+## @file
+#
+#   Create by HPBird
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = ShellDmpLog2
+  FILE_GUID                      = E8429BFE-CA11-494b-9587-082BAEE92151
+  MODULE_TYPE                    = DXE_DRIVER
+  PI_SPECIFICATION_VERSION       = 0x0001000A
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = ShellDmpLog2EntryPoint
+
+[Sources]
+    ShellDmpLog2.h  
+    ShellDmpLog2.c    
+    Tpm12.h
+    Tpm20.h
+    Tpm20Implementation.h
+    TrEEProtocol.h
+    AuxFunc.c
+    AuxFunc.h
+    Unaligned.c
+    Tpm2PcrRead.c
+    Tpm2PcrRead.h
+    Tpm2CommandLib.h
+    Tpm2Help.c
+    ShellDmpTpm20Sha1.c
+    ShellDmpTpm12Sha1.c
+    ShellDmpLog2Aux.c
+    TcgEfiProtocol.h
+    ShellDmpTpm20Sha256.c
+    SM3.c
+    SM3_Int.h
+    SM3.h
+    sha.h
+    sha1_one.c
+    sha_locl.h
+    sha1dgst.c
+    mem_clr.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  AmiModulePkg/AmiModulePkg.dec
+  AmiCompatibilityPkg/AmiCompatibilityPkg.dec
+
+[LibraryClasses]
+  AmiDxeLib
+  UefiDriverEntryPoint
+
+[Protocols]
+
+[Depex]
+    TRUE
+
+[BuildOptions.X64]
+  *_*_X64_CC_FLAGS = /D EFIx64
+  *_*_X64_ASM_FLAGS = /D EFIx64
+  
