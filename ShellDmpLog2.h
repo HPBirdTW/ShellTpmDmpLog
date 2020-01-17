@@ -1,3 +1,9 @@
+/*
+ * Copyright (C) 2019 HPBirdChen (hpbirdtw@gmail.com)
+ * All rights reserved.
+ * The License file locate on:
+ * https://github.com/HPBirdTW/ShellTpmDmpLog/license.txt
+ * */
 
 #ifndef __SHELL_TPM_DMPLOG2_H__
 #define __SHELL_TPM_DMPLOG2_H__

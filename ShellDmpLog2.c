@@ -1,6 +1,9 @@
-//
-// Create By HPBird
-//
+/*
+ * Copyright (C) 2019 HPBirdChen (hpbirdtw@gmail.com)
+ * All rights reserved.
+ * The License file locate on:
+ * https://github.com/HPBirdTW/ShellTpmDmpLog/license.txt
+ * */
 
 #include <Uefi.h>
 #include <Library/UefiBootServicesTableLib.h>
@@ -121,17 +124,3 @@ EFI_STATUS ShellDmpLog2EntryPoint(
 
     return EFI_SUCCESS;
 }
-
-//*****************************************************************//
-//*****************************************************************//
-//**                                                             **//
-//**         (C)Copyright 2009, American Megatrends, Inc.        **//
-//**                                                             **//
-//**                     All Rights Reserved.                    **//
-//**                                                             **//
-//**   5555 Oakbrook Pkwy, Building 200,Norcross, Georgia 30093  **//
-//**                                                             **//
-//**                     Phone (770)-246-8600                    **//
-//**                                                             **//
-//*****************************************************************//
-//*****************************************************************//

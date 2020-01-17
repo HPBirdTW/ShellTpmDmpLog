@@ -1,13 +1,16 @@
+/*
+ * Copyright (C) 2019 HPBirdChen (hpbirdtw@gmail.com)
+ * All rights reserved.
+ * The License file locate on:
+ * https://github.com/HPBirdTW/ShellTpmDmpLog/license.txt
+ * */
+
 #include <Uefi.h>
 #include <Library/UefiBootServicesTableLib.h>
 #include <Library/DebugLib.h>
 #include <Library/BaseLib.h>
 #include <Library/BaseMemoryLib.h>
 #include "ShellDmpLog2.h"
-
-//
-// Create By HPBird
-//
 
 EFI_STATUS TCG_PCR_EVENT_PrintOneEvent(TCG_PCR_EVENT* pStart, TCG_PCR_EVENT** pNext);
 EFI_STATUS GetNextSMLEvent(TCG_PCR_EVENT* pStart, TCG_PCR_EVENT** pNext);

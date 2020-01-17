@@ -1,4 +1,9 @@
-
+/*
+ * Copyright (C) 2019 HPBirdChen (hpbirdtw@gmail.com)
+ * All rights reserved.
+ * The License file locate on:
+ * https://github.com/HPBirdTW/ShellTpmDmpLog/license.txt
+ * */
 
 EFI_STATUS PString(CHAR16* _str);
 EFI_STATUS SPrintf( CHAR16* _str, ... );

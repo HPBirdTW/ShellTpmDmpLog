@@ -1,6 +1,10 @@
-//
-//      Create By HPBird
-//
+/*
+ * Copyright (C) 2019 HPBirdChen (hpbirdtw@gmail.com)
+ * All rights reserved.
+ * The License file locate on:
+ * https://github.com/HPBirdTW/ShellTpmDmpLog/license.txt
+ * */
+
 EFI_STATUS Tpm2ShaAlgoIdPCRRead(
     IN UINT16           AlgorithmId,
     IN TPM_PCRINDEX     PCRIndex,

@@ -1,3 +1,10 @@
+/*
+ * Copyright (C) 2019 HPBirdChen (hpbirdtw@gmail.com)
+ * All rights reserved.
+ * The License file locate on:
+ * https://github.com/HPBirdTW/ShellTpmDmpLog/license.txt
+ * */
+
 #include <Uefi.h>
 #include <Library/UefiBootServicesTableLib.h>
 #include <Library/DebugLib.h>
@@ -5,10 +12,6 @@
 #include <Library/BaseMemoryLib.h>
 #include "sha.h"
 #include "ShellDmpLog2.h"
-
-//
-// Create By HPBird
-//
 
 static EFI_TREE_PROTOCOL            *mTreeProtocol = NULL;
 static EFI_TCG_PROTOCOL             *mTcgEfiProtocol = NULL;

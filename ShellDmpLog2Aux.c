@@ -1,3 +1,10 @@
+/*
+ * Copyright (C) 2019 HPBirdChen (hpbirdtw@gmail.com)
+ * All rights reserved.
+ * The License file locate on:
+ * https://github.com/HPBirdTW/ShellTpmDmpLog/license.txt
+ * */
+
 #include <Uefi.h>
 #include <Library/UefiBootServicesTableLib.h>
 #include <Library/UefiRuntimeServicesTableLib.h>
@@ -7,10 +14,6 @@
 #include <Library/PrintLib.h>
 #include "ShellDmpLog2.h"
 #include "AuxFunc.h"
-
-//
-// Create By HPBird
-//
 
 CHAR16      u16StrBuf[StrBufLen];
 

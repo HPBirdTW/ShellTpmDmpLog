@@ -1,6 +1,9 @@
 ## @file
 #
-#   Create by HPBird
+#  Copyright (C) 2019 HPBirdChen (hpbirdtw@gmail.com)
+#  All rights reserved.
+#  The License file locate on:
+#  https://github.com/HPBirdTW/ShellTpmDmpLog/license.txt
 #
 ##
 
@@ -16,39 +19,33 @@
 [Sources]
     ShellDmpLog2.h  
     ShellDmpLog2.c    
-    Tpm12.h
-    Tpm20.h
-    Tpm20Implementation.h
-    TrEEProtocol.h
     AuxFunc.c
     AuxFunc.h
-    Unaligned.c
     Tpm2PcrRead.c
     Tpm2PcrRead.h
-    Tpm2CommandLib.h
-    Tpm2Help.c
     ShellDmpTpm20Sha1.c
     ShellDmpTpm12Sha1.c
     ShellDmpLog2Aux.c
-    TcgEfiProtocol.h
     ShellDmpTpm20Sha256.c
     SM3.c
     SM3_Int.h
     SM3.h
-    sha.h
-    sha1_one.c
     sha_locl.h
     sha1dgst.c
     mem_clr.c
+    sha256.c
+    sha512.c
 
 [Packages]
-  MdePkg/MdePkg.dec
-  AmiModulePkg/AmiModulePkg.dec
-  AmiCompatibilityPkg/AmiCompatibilityPkg.dec
+    MdePkg/MdePkg.dec
 
 [LibraryClasses]
-  AmiDxeLib
-  UefiDriverEntryPoint
+    UefiLib
+    BaseMemoryLib
+    MemoryAllocationLib
+    BaseLib
+    PrintLib
+    UefiDriverEntryPoint
 
 [Protocols]
 
@@ -56,6 +53,5 @@
     TRUE
 
 [BuildOptions.X64]
-  *_*_X64_CC_FLAGS = /D EFIx64
-  *_*_X64_ASM_FLAGS = /D EFIx64
+
   
