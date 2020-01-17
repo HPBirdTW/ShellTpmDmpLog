@@ -111,6 +111,8 @@ EFI_STATUS ShellDmpLog2EntryPoint(
     static EFI_EVENT        Event = NULL;
     static EFI_GUID         ReadyToBoot = EFI_EVENT_GROUP_READY_TO_BOOT;
 
+    SPrintf (L"ShellTpmDmpLog Tools, Version:%s\n\r", VESION_SHELL_TPM_DMPLOG );
+    SPrintf (L"  (https://github.com/HPBirdTW/ShellTpmDmpLog)\n\r");
 #if BUILD_SHELL_TOOLS
     ShowChkTCGEvent( NULL, NULL );
 #else

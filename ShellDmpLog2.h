@@ -15,6 +15,7 @@
 #include "SM3.h"
 
 #define BUILD_SHELL_TOOLS 1     // Build for Uefi Shell Application.
+#define VESION_SHELL_TPM_DMPLOG     L"1.0"
 
 #if defined(SMDBG_SUPPORT_LIB) && SMDBG_SUPPORT_LIB
 #undef DEBUG
